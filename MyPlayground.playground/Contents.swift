@@ -163,3 +163,16 @@ struct Book {
 var book: Book? = nil
 let author = book?.author?.uppercased() ?? "No Author"
 print(author)
+///--------------------------------------------------------------------------------------
+/// Solid Principles
+/*
+ S
+Stands for Single Responsability, each class should have one reason to change, meaning it should be responsible for a single part of the functionality. This does not mean it should only perform one task, but that all its responsibilities should be closely related.b.
+ O
+Stands for Open/Closed this principle says that Classes should be open for extension but closed for modification. This means we should be able to add new functionality without altering existing code, often achieved using inheritance or protocols.
+ L
+Stands for Lizkov Substitution a subclass should be able to replace its parent class without breaking the application. If a derived class modifies behavior in a way that makes the parent class unusable, it violates this principle.
+ I
+Stands for Interface Segregation Classes should not be forced to implement methods they do not use. Instead of large, general-purpose interfaces (or protocols), it’s better to have smaller, more specific ones to avoid unnecessary dependencies.
+ D
+Stands for Dependency Inversion and means that High-level modules should not depend on low-level modules, but both should depend on abstractions. This reduces tight coupling and makes the code more flexible and maintainable.*/
